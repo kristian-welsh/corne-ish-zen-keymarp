@@ -53,10 +53,10 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-&none &kp Q &kp W &kp F   &kp P   &kp B              &kp J     &kp L           &kp U     &kp Y   &kp SEMI &none
-&none &kp A &kp R &kp S   &kp T   &kp G              &kp M     &kp N           &kp E     &kp I   &kp O    &kp LALT
-&none &kp Z &kp X &kp C   &kp D   &kp V              &kp K     &kp H           &kp COMMA &kp DOT &kp FSLH &pass_end
-                  &mo SYM &kp X   &td0               &sk LSHFT &htt RET SPACE  &mo NUM
+&none &kp Q &kp W &kp F   &kp P    &kp B              &kp J     &kp L           &kp U     &kp Y   &kp SEMI &none
+&none &kp A &kp R &kp S   &kp T    &kp G              &kp M     &kp N           &kp E     &kp I   &kp O    &kp LALT
+&none &kp Z &kp X &kp C   &kp D    &kp V              &kp K     &kp H           &kp COMMA &kp DOT &kp FSLH &pass_end
+                  &mo SYM &tog NAV &td0               &sk LSHFT &htt RET SPACE  &mo NUM
                         >;
                 };
 
