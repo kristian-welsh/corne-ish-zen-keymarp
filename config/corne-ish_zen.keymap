@@ -30,6 +30,15 @@
 		    tapping-term-ms = <200>;
 		    bindings = <&kp N1>, <&kp N2>, <&kp N3>;
 		};
+		htt: hold_tap {
+		    compatible = "zmk,behavior-hold-tap";
+		    label = "HOLD_TAP";
+		    #binding-cells = <2>;
+		    tapping-term-ms = <150>;
+		    quick-tap-ms = <0>;
+		    flavor = "tap-preferred";
+		    bindings = <&kp>, <&kp>;
+		};
 	};
 	macros {
 		ZMK_MACRO(pass_end,
@@ -44,10 +53,10 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-&none &kp Q &kp W &kp F   &kp P   &kp B              &kp J     &kp L         &kp U     &kp Y   &kp SEMI &none
-&none &kp A &kp R &kp S   &kp T   &kp G              &kp M     &kp N         &kp E     &kp I   &kp O    &kp LALT
-&none &kp Z &kp X &kp C   &kp D   &kp V              &kp K     &kp H         &kp COMMA &kp DOT &kp FSLH &pass_end
-                  &mo SYM &kp X   &td0        &sk LSHFT &kp X &mo NUM
+&none &kp Q &kp W &kp F   &kp P   &kp B              &kp J     &kp L           &kp U     &kp Y   &kp SEMI &none
+&none &kp A &kp R &kp S   &kp T   &kp G              &kp M     &kp N           &kp E     &kp I   &kp O    &kp LALT
+&none &kp Z &kp X &kp C   &kp D   &kp V              &kp K     &kp H           &kp COMMA &kp DOT &kp FSLH &pass_end
+                  &mo SYM &kp X   &td0               &sk LSHFT &htt RET SPACE  &mo NUM
                         >;
                 };
 
