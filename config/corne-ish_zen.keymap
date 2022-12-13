@@ -17,6 +17,22 @@
 #define CONFIG 5
 
 / {
+	behaviours {
+		td0: tap_dance_0 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_0";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+		};
+	};
+	macros {
+		ZMK_MACRO(pass_end,
+			wait-ms = <30>;
+			tap-ms = <40>;
+			bindings = <&kp N2 &kp N2 &kp MINUS &kp N1 &kp N2 &kp ENTER>;
+		)
+	};
         keymap {
                 compatible = "zmk,keymap";
 
