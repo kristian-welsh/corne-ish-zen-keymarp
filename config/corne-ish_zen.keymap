@@ -46,8 +46,8 @@
                         bindings = <
 &none &kp Q &kp W &kp F   &kp P   &kp B              &kp J     &kp L         &kp U     &kp Y   &kp SEMI &none
 &none &kp A &kp R &kp S   &kp T   &kp G              &kp M     &kp N         &kp E     &kp I   &kp O    &kp LALT
-&none &kp Z &kp X &kp C   &kp D   &kp V              &kp K     &kp H         &kp COMMA &kp DOT &kp FSLH &pass_end
-                  &mo SYM &tg NAV &td0        &sk LSHFT &kp X &mo NUM
+&none &kp Z &kp X &kp C   &kp D   &kp V              &kp K     &kp H         &kp COMMA &kp DOT &kp FSLH &kp X
+                  &mo SYM &tg NAV &kp X        &sk LSHFT &kp X &mo NUM
                         >;
                 };
 
