@@ -77,7 +77,14 @@
 		    label = "TAP_DANCE_7";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <200>;
-		    bindings = <&ht LC(LEFT) LA(LS(J))>, <&ht LA(LC(LS(LEFT))) LA(LS(A))>;
+		    bindings = <&mt LC(LEFT) LA(LS(J))>, <&mt LA(LC(LS(LEFT))) LA(LS(A))>;
+		};
+		td_wm_layout: tap_dance_8 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_8";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&kp LA(LS(D))>, <&kp LA(LS(A))>;
 		};
 		htt: hold_tap {
 		    compatible = "zmk,behavior-hold-tap";
