@@ -35,7 +35,7 @@
 		    label = "TAP_DANCE_1";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <200>;
-		    bindings = <&kp N1>, <&kp N2>;
+		    bindings = <&kp LSHIFT>, <&kp N2>;
 		};
 		htt: hold_tap {
 		    compatible = "zmk,behavior-hold-tap";
