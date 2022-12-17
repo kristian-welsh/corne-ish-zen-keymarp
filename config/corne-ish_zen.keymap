@@ -37,20 +37,6 @@
 		    tapping-term-ms = <200>;
 		    bindings = <&kp LGUI>, <&kp LCTR>;
 		};
-		td_nav_up: tap_dance_2 {
-		    compatible = "zmk,behavior-tap-dance";
-		    label = "TAP_DANCE_2";
-		    #binding-cells = <0>;
-		    tapping-term-ms = <200>;
-		    bindings = <&ht K_PG_UP K_SCROLL_DOWN>, <&kp HOME>;
-		};
-		td_nav_down: tap_dance_3 {
-		    compatible = "zmk,behavior-tap-dance";
-		    label = "TAP_DANCE_3";
-		    #binding-cells = <0>;
-		    tapping-term-ms = <200>;
-		    bindings = <&ht K_PG_DOWN K_SCROLL_UP>, <&kp END>;
-		};
 		htt: hold_tap {
 		    compatible = "zmk,behavior-hold-tap";
 		    label = "HOLD_TAP";
