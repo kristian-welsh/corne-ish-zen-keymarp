@@ -30,13 +30,6 @@
 		    tapping-term-ms = <200>;
 		    bindings = <&kp N1>, <&kp N2>, <&kp N3>;
 		};
-		td_cmd_ctr: tap_dance_1 {
-		    compatible = "zmk,behavior-tap-dance";
-		    label = "TAP_DANCE_1";
-		    #binding-cells = <0>;
-		    tapping-term-ms = <200>;
-		    bindings = <&kp LGUI>, <&kp LCTR>;
-		};
 		htt: hold_tap {
 		    compatible = "zmk,behavior-hold-tap";
 		    label = "HOLD_TAP";
