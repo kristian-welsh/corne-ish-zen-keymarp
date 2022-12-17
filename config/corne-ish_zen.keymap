@@ -42,7 +42,7 @@
 		    label = "TAP_DANCE_2";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <200>;
-		    bindings = <&ht PG_UP K_SCROLL_DOWN>, <&kp HOME>;
+		    bindings = <&mt PG_UP K_SCROLL_DOWN>, <&kp HOME>;
 		};
 		htt: hold_tap {
 		    compatible = "zmk,behavior-hold-tap";
