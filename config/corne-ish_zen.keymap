@@ -30,6 +30,69 @@
 		    tapping-term-ms = <200>;
 		    bindings = <&kp N1>, <&kp N2>, <&kp N3>;
 		};
+		td_cmd_ctr: tap_dance_1 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_1";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&kp LGUI>, <&kp LCTR>;
+		};
+		td_nav_up: tap_dance_2 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_2";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&ht K_PG_UP K_SCROLL_DOWN>, <&kp HOME>;
+		};
+		td_nav_down: tap_dance_3 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_3";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&ht K_PG_DOWN K_SCROLL_UP>, <&kp END>;
+		};
+		td_nav_next: tap_dance_4 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_4";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&ht LG(T) LC(TAB)>, <&ht LG(N) LG(RBKT)>;
+		};
+		td_nav_prev: tap_dance_5 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_5";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&ht LG(W) LC(LS(TAB))>, <&ht LG(LS(T)) LG(LBKT)>;
+		};
+		td_wm_r: tap_dance_6 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_6";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&ht LC(RIGHT) LA(LS(K))>, <&ht LA(LC(LS(RIGHT))) LA(LS(D))>;
+		};
+		td_wm_l: tap_dance_7 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_7";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&ht LC(LEFT) LA(LS(J))>, <&ht LA(LC(LS(LEFT))) LA(LS(A))>;
+		};
+		td_wm_layout: tap_dance_8 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_8";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&kp LA(LS(D))>, <&kp LA(LS(A))>;
+		};
+		td_wm_window: tap_dance_9 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_9";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&ht LA(LS(RET)) LA(LS(K))>, <&ht LA(LS(T)) LC(N1)>;
+		};
 		htt: hold_tap {
 		    compatible = "zmk,behavior-hold-tap";
 		    label = "HOLD_TAP";
@@ -39,6 +102,7 @@
 		    flavor = "tap-preferred";
 		    bindings = <&kp>, <&kp>;
 		};
+	
 	};
 	macros {
 		ZMK_MACRO(pass_end,
