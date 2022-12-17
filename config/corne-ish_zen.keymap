@@ -140,7 +140,7 @@
                         bindings = <
 &none &td_nav_prev &td_nav_up &kp UP        &td_nav_down &td_nav_next          &td_nav_prev  &td_nav_up &none &td_nav_down &td_nav_next &none
 &none &kp ESC      &kp LEFT   &kp DOWN      &kp RIGHT    &sk LALT              &none         &none      &none &none        &none        &none
-&none &none        &td_wm_l   &td_wm_layout &td_wm_r     &td_wm_window         &ht RET SPACE &td_wm_l   &none &td_wm_r     &none        &none
+&none &none        &td_wm_l   &td_wm_layout &td_wm_r     &td_wm_window         &mt RET SPACE &td_wm_l   &none &td_wm_r     &none        &none
                               &trans        &trans       &trans                &trans        &none      &to BASE
                         >;
                 };
