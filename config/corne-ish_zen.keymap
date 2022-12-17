@@ -49,7 +49,7 @@
 		    label = "TAP_DANCE_3";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <200>;
-		    bindings = <&mt K_PG_DOWN K_SCROLL_UP>, <&kp END>;
+		    bindings = <&mt PAGE_DOWN K_SCROLL_UP>, <&kp END>;
 		};
 		td_nav_next: tap_dance_4 {
 		    compatible = "zmk,behavior-tap-dance";
