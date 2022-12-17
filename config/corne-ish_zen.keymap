@@ -58,6 +58,13 @@
 		    tapping-term-ms = <200>;
 		    bindings = <&mt LG(T) LC(TAB)>, <&mt LG(N) LG(RBKT)>;
 		};
+		td_nav_prev: tap_dance_5 {
+		    compatible = "zmk,behavior-tap-dance";
+		    label = "TAP_DANCE_5";
+		    #binding-cells = <0>;
+		    tapping-term-ms = <200>;
+		    bindings = <&mt LG(W) LC(LS(TAB))>, <&mt LG(LS(T)) LG(LBKT)>;
+		};
 		htt: hold_tap {
 		    compatible = "zmk,behavior-hold-tap";
 		    label = "HOLD_TAP";
