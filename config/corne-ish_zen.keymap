@@ -122,10 +122,9 @@
 &none &kp Z &kp X &kp C   &kp D    &kp V              &kp K     &kp H           &kp COMMA &kp DOT &kp FSLH &pass_end
                   &mo SYM &tog NAV &td_cmd_ctr        &sk LSHFT &htt RET SPACE  &mo NUM
                         >;
-
                 };
 
-                gaming_layer {
+                numpad_layer {
                         label = "NUMPAD";
                         bindings = <
 &none &bootloader &kp C_PREV   &kp C_NEXT   &kp C_PLAY    &kp LG(LS(N3))         &kp KP_PLUS  &kp N7 &kp N8 &kp N9 &kp STAR   &none
@@ -135,43 +134,13 @@
                         >;
                 };
 
-                numpad_layer {
+                navigation_layer {
                         label = "NAV";
                         bindings = <
 &none &td_nav_prev &td_nav_up &kp UP        &td_nav_down &td_nav_next          &td_nav_prev  &td_nav_up &none &td_nav_down &td_nav_next &none
 &none &kp ESC      &kp LEFT   &kp DOWN      &kp RIGHT    &sk LALT              &none         &none      &none &none        &none        &none
 &none &none        &td_wm_l   &td_wm_layout &td_wm_r     &td_wm_window         &mt RET SPACE &td_wm_l   &none &td_wm_r     &none        &none
                               &trans        &trans       &trans                &trans        &none      &to BASE
-                        >;
-                };
-
-                numrow_layer {
-                        label = "NUMROW";
-                        bindings = <
-   &kp ESC   &kp N1 &kp N2 &kp N3    &kp N4    &kp N5       &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp DEL
-   &kp GRAVE &none  &none  &kp PSCRN &kp MINUS &kp EQUAL    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SEMI &none
-   &none     &none  &none  &kp BSLH  &kp LBKT  &kp RBKT     &none    &none    &none  &none     &none    &none 
-                          &mo CONFIG &kp LCTL &mo NUMROW    &kp SPC &mo ADJUST &kp F13
-                        >;
-                };
-
-                adjust_layer {
-                        label = "ADJUST";
-                        bindings = <
-   &kp F1      &kp F2  &kp F3   &kp F4    &kp F5 &kp F6    &kp F7   &kp F8   &kp F9 &kp F10   &kp F11 &kp F12
-   &kp CAPS    &kp INS &kp HOME &kp PG_UP &none  &none     &kp LEFT &kp DOWN &kp UP &kp RIGHT &none   &none
-   &tog NUMPAD &kp DEL &kp END  &kp PG_DN &none  &none     &none    &none    &none  &none     &none   &none
-                           &kp LGUI &kp LCTL &mo NUMROW    &kp SPC &mo ADJUST &tog GAMING
-                        >;
-                };
-
-                config_layer {
-                        label = "CONFIG";
-                        bindings = <
-   &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &none 
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
-   &none      &none        &none        &none        &none        &none           &none &none &none &none &none &none
-                                                &mo CONFIG &kp LCTL &mo NUMROW    &kp SPC &mo ADJUST &kp F13
                         >;
                 };
         };
