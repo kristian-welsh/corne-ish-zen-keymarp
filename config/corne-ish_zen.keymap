@@ -154,5 +154,15 @@
                                              &trans        &trans                    &trans                 &trans &trans    &trans
 			>;
 		};
+
+		symbol_layer {
+			label = "SYM";
+			bindings = <
+&none &none   &kp AT     &kp AMPS  &kp PIPE &none            &none     &kp PERCENT      &kp CARET         &kp UNDERSCORE    &kp GRAVE        &none
+&none &kp ESC &kp DOLLAR &kp LPAR  &kp RPAR &kp TILDE        &kp MINUS &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp DOUBLE_QUOTES &kp SINGLE_QUOTE &none
+&none &none   &kp HASH   &kp EQUAL &kp EXCL &none            &none     &kp BACKSPACE    &kp DEL           &sk LALT          &kp BACKSLASH    &none
+                         &trans    &trans   &trans           &trans    &kp TAB          &trans
+			>;
+		};
         };
 };
