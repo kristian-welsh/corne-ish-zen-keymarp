@@ -12,7 +12,8 @@
 #define BASE 0
 #define NUM 1
 #define NAV 2
-#define SYM 3
+#define HOT 3
+#define SYM 4
 
 #define QWERTY 0
 #define GAMING 1
@@ -117,31 +118,41 @@
                 default_layer {
                         label = "COLMAK";
                         bindings = <
-&none &kp Q &kp W &kp F   &kp P    &kp B              &kp J     &kp L           &kp U     &kp Y   &kp SEMI &none
-&none &kp A &kp R &kp S   &kp T    &kp G              &kp M     &kp N           &kp E     &kp I   &kp O    &kp LALT
-&none &kp Z &kp X &kp C   &kp D    &kp V              &kp K     &kp H           &kp COMMA &kp DOT &kp FSLH &pass_end
-                  &mo SYM &tog NAV &td_cmd_ctr        &sk LSHFT &htt RET SPACE  &mo NUM
+                                                &none   &kp Q &kp W &kp F   &kp P    &kp B                  &kp J     &kp L           &kp U     &kp Y   &kp SEMI &none
+                                                &mo HOT &kp A &kp R &kp S   &kp T    &kp G                  &kp M     &kp N           &kp E     &kp I   &kp O    &kp LALT
+                                                &none   &kp Z &kp X &kp C   &kp D    &kp V                  &kp K     &kp H           &kp COMMA &kp DOT &kp FSLH &pass_end
+                                                                    &mo SYM &tog NAV &td_cmd_ctr            &sk LSHFT &htt RET SPACE  &mo NUM
                         >;
                 };
 
                 numpad_layer {
                         label = "NUMPAD";
                         bindings = <
-&none &bootloader &kp C_PREV   &kp C_NEXT   &kp C_PLAY    &kp LG(LS(N3))         &kp KP_PLUS  &kp N7 &kp N8 &kp N9 &kp STAR   &none
-&none &none       &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp F11                &kp KP_MINUS &kp N4 &kp N5 &kp N6 &kp FSLH   &to NAV
-&none &none       &kp C_BRI_DN &kp C_BRI_UP &kp LC(LG(Q)) &kp SYS_SLEEP          &kp N0       &kp N1 &kp N2 &kp N3 &kp KP_DOT &none
-                               &trans       &trans        &trans                 &trans       &trans &trans
+                           &none &bootloader &kp C_PREV   &kp C_NEXT   &kp C_PLAY    &kp LG(LS(N3))         &kp KP_PLUS  &kp N7 &kp N8 &kp N9 &kp STAR   &none
+                           &none &none       &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE    &kp F11                &kp KP_MINUS &kp N4 &kp N5 &kp N6 &kp FSLH   &to NAV
+                           &none &none       &kp C_BRI_DN &kp C_BRI_UP &kp LC(LG(Q)) &kp SYS_SLEEP          &kp N0       &kp N1 &kp N2 &kp N3 &kp KP_DOT &none
+                                                          &trans       &trans        &trans                 &trans       &trans &trans
                         >;
                 };
 
                 navigation_layer {
                         label = "NAV";
                         bindings = <
-&none &td_nav_prev &td_nav_up &kp UP        &td_nav_down &td_nav_next          &td_nav_prev  &td_nav_up &none &td_nav_down &td_nav_next &none
-&none &kp ESC      &kp LEFT   &kp DOWN      &kp RIGHT    &sk LALT              &none         &none      &none &none        &none        &none
-&none &none        &td_wm_l   &td_wm_layout &td_wm_r     &td_wm_window         &mt RET SPACE &td_wm_l   &none &td_wm_r     &none        &none
-                              &trans        &trans       &trans                &trans        &none      &to BASE
+                            &none &td_nav_prev &td_nav_up &kp UP        &td_nav_down &td_nav_next           &td_nav_prev  &td_nav_up &none &td_nav_down &td_nav_next &none
+                            &none &kp ESC      &kp LEFT   &kp DOWN      &kp RIGHT    &sk LALT               &none         &none      &none &none        &none        &none
+                            &none &none        &td_wm_l   &td_wm_layout &td_wm_r     &td_wm_window          &mt RET SPACE &td_wm_l   &none &td_wm_r     &none        &none
+                                                          &trans        &trans       &trans                 &trans        &none      &to BASE
                         >;
                 };
+
+		hotkey_layer {
+			label = "HOT";
+			bindings = <
+&kp X &kp X         &bt BT_CLR               &bt BT_SEL 0  &bt BT_SEL 1              &kp X                  &kp X  &kp LA(A) &kp LA(S) &kp X &kp X &kp X
+&kp X &kp LA(LG(M)) &kp LA(LG(L))            &kp LG(LS(T)) &kp LG(B)                 &kp LS(F6)             &kp X  &kp X     &kp X     &kp X &kp X &kp X
+&kp X &kp X         &kp LA(LC(LS(LG(LEFT)))) &kp X         &kp LA(LC(LS(LG(RIGHT)))) &kp X                  &kp X  &kp X     &kp X     &kp X &kp X &kp X
+                                             &trans        &trans                    &trans                 &trans &trans    &trans
+			>;
+		};
         };
 };
