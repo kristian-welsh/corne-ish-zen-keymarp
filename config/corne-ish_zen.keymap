@@ -28,6 +28,7 @@
 #define IDEA_FORMAT LA(LG(L))
 #define IDEA_DEF LG(B)     
 #define IDEA_EXTRACT LA(LG(M))
+#define IDEA_RENAME LS(F6)
 
 / {
 	behaviours {
